@@ -1,6 +1,8 @@
 package com.gmadhu.photoapp.adaptor
 
+import java.io.File
+
 data class ImageData(
-    var image: Int?,
-    var isSelect:String
+    var image: File?,
+    var isSelect:Boolean
 )

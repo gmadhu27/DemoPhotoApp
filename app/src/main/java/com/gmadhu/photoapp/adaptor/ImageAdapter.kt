@@ -37,14 +37,14 @@ class ImageAdapter(
         fun bindItems(
             type: ImageData
         ) {
-            if (type.isSelect=="y") {
+            if (type.isSelect) {
                 itemView.cardview_payment!!.setBackgroundResource(R.drawable.img_selected)
 
             } else {
                 itemView.cardview_payment!!.setBackgroundResource(R.drawable.bg_button_border)
 
             }
-                Glide.with(mContext!!).load(type.image)
+                Glide.with(mContext).load(type.image)
                     .diskCacheStrategy(DiskCacheStrategy.NONE)
                     .skipMemoryCache(true)
                     .fitCenter()
